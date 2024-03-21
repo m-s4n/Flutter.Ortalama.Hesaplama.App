@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "app (chrome)",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-d",
+                "chrome",
+                "--web-port",
+                "8080"
+            ]
+        },
+        {
+            "name": "app (emülator)",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-d",
+                "emulator-5554"
+            ]
+        },
+        {
+            "name": "app (Cep Telefonu)",
+            "request": "launch",
+            "type": "dart",
+            "args": [
+                "-d",
+                "10AC9G1U4A0010N"
+            ]
+        }
+    ]
+}
