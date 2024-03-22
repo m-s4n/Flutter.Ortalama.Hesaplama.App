@@ -68,7 +68,7 @@ class _IcerikState extends State<_Icerik> {
           ],
         ),
         Expanded(
-          child: DersListFragment(handleDismiss),
+          child: DersListFragment(handleDismiss, handleAdd),
         )
       ],
     );
@@ -144,6 +144,12 @@ class _IcerikState extends State<_Icerik> {
   void handleDismiss(int index) {
     setState(() {
       AppData.dersSil(index);
+    });
+  }
+
+  void handleAdd(Ders ders) {
+    setState(() {
+      AppData.dersEkle(ders);
     });
   }
 }
